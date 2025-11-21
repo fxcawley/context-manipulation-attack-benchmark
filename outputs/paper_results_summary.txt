@@ -1,0 +1,32 @@
+======================================================================
+RESEARCH RESULTS SUMMARY
+Context Manipulation Attack Effectiveness
+======================================================================
+
+DATASET
+  Test prompts: 10
+  Total iterations: 70
+
+COHERENCE DEGRADATION
+  Initial (M ± SD): 0.787 ± 0.236
+  Final (M ± SD): 0.028 ± 0.085
+  Change: 0.759
+  Percent reduction: 96.4%
+
+STATISTICAL SIGNIFICANCE
+  t-statistic: 9.785
+  p-value: 0.000004
+  Result: *** (p < 0.001) - Highly significant
+  Cohen's d: 3.262 (large effect)
+
+BREAKDOWN ANALYSIS
+  Mean breakdown rate: 22.9%
+  Prompts with breakdown: 8/10
+
+KEY FINDINGS
+  1. Attacks significantly degrade model coherence (p < 0.001)
+  2. Effect size is large (d = 3.26)
+  3. 80% of attacks cause model breakdown
+  4. Mean coherence reduction: 96%
+
+======================================================================
