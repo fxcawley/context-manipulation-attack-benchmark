@@ -1,0 +1,108 @@
+======================================================================
+DEFENSE MECHANISM EVALUATION REPORT
+======================================================================
+
+1. DEFENSE MECHANISMS TESTED
+----------------------------------------------------------------------
+  1. Semantic Drift Detector
+     - Monitors coherence degradation over time
+  2. Breakdown Detector
+     - Identifies breakdown patterns (repetition, gibberish)
+  3. Consistency Checker
+     - Detects inconsistencies across conversation turns
+
+2. EVALUATION METRICS
+----------------------------------------------------------------------
+  - True Positive Rate (TPR): Attacks correctly detected
+  - False Positive Rate (FPR): Benign responses flagged
+  - F1 Score: Harmonic mean of precision and recall
+  - Average Confidence: Mean detection confidence
+
+3. RESULTS BY SENSITIVITY LEVEL
+----------------------------------------------------------------------
+
+Sensitivity: 0.3
+------------------------------------------------------------
+
+Semantic Drift Detector:
+  True Positive Rate:  0.0%
+  False Positive Rate: 0.0%
+  F1 Score:            0.000
+  Avg Confidence:      0.000
+
+Breakdown Detector:
+  True Positive Rate:  28.6%
+  False Positive Rate: 0.0%
+  F1 Score:            2.000
+  Avg Confidence:      0.257
+  Avg Detection Iter:  4.5
+
+Consistency Checker:
+  True Positive Rate:  14.3%
+  False Positive Rate: 0.0%
+  F1 Score:            2.000
+  Avg Confidence:      0.424
+  Avg Detection Iter:  4.0
+
+Sensitivity: 0.5
+------------------------------------------------------------
+
+Semantic Drift Detector:
+  True Positive Rate:  0.0%
+  False Positive Rate: 0.0%
+  F1 Score:            0.000
+  Avg Confidence:      0.000
+
+Breakdown Detector:
+  True Positive Rate:  28.6%
+  False Positive Rate: 0.0%
+  F1 Score:            2.000
+  Avg Confidence:      0.257
+  Avg Detection Iter:  4.5
+
+Consistency Checker:
+  True Positive Rate:  14.3%
+  False Positive Rate: 0.0%
+  F1 Score:            2.000
+  Avg Confidence:      0.444
+  Avg Detection Iter:  4.0
+
+Sensitivity: 0.7
+------------------------------------------------------------
+
+Semantic Drift Detector:
+  True Positive Rate:  0.0%
+  False Positive Rate: 0.0%
+  F1 Score:            0.000
+  Avg Confidence:      0.000
+
+Breakdown Detector:
+  True Positive Rate:  28.6%
+  False Positive Rate: 0.0%
+  F1 Score:            2.000
+  Avg Confidence:      0.257
+  Avg Detection Iter:  4.5
+
+Consistency Checker:
+  True Positive Rate:  14.3%
+  False Positive Rate: 10.0%
+  F1 Score:            1.176
+  Avg Confidence:      0.467
+  Avg Detection Iter:  4.0
+
+4. RECOMMENDATIONS
+----------------------------------------------------------------------
+
+Best Detection Rate: Breakdown Detector
+  TPR: 28.6%, FPR: 0.0%
+
+Best F1 Score: Breakdown Detector
+  F1: 2.000, TPR: 28.6%
+
+5. DEPLOYMENT GUIDANCE
+----------------------------------------------------------------------
+  - For maximum security: High sensitivity + multiple defenses
+  - For production use: Medium sensitivity + breakdown detector
+  - For research: Low sensitivity to study subtle attacks
+
+======================================================================
